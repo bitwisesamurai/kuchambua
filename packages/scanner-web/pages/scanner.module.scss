@@ -1,0 +1,68 @@
+.scanner {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  height: 100vh;
+
+  .content,
+  canvas,
+  textarea {
+    width: 80%;
+  }
+
+  .content {
+    margin-top: 10px;
+
+    video {
+      width: 100%;
+    }
+
+    .controls {
+      margin-top: 6px;
+
+      input[type="file"] {
+        display: none;
+      }
+
+      button {
+        border: 0;
+
+        width: 40%;
+        height: 40px;
+
+        font-size: 20px;
+
+        cursor: pointer;
+      }
+
+      span {
+        margin-left: 20px;
+
+        &.enabled {
+          color: #000;
+        }
+        &.disabled {
+          color: darkgrey;
+        }
+
+        input[type="checkbox"] {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  canvas,
+  textarea {
+    margin-top: 6px;
+
+    border: 1px solid darkgrey;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+}
